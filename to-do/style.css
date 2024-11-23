@@ -1,0 +1,99 @@
+body {
+  background-image: url("bluebg.jpg");
+  background-size: cover; /* Makes the image cover the entire screen */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  margin: 0; /* Removes default margin of the body */
+  height: 100vh; /* Ensures the body is the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-2 {
+  background-color: rgb(254, 242, 255); /* White background for the card */
+  width: 343px;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center content */
+  transform: translateY(-70px);
+  position: relative; /* Keeps it in flow with other content */
+  /* height: 200px; */
+  
+}
+.to-do {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+.typetodo {
+  width: calc(75%);
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #000000;
+  border-radius: 24px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+}
+.done {
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: rgb(90, 43, 124);
+  color: rgb(255, 255, 255);
+  width: 80px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  transform: translateX(-150px);
+  user-select: none;
+  cursor: pointer;
+  padding: 8px 5px 10px 40px;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(unchecked-41.png);
+  background-size: cover;
+  background-position: center;
+  top: 4px;
+  left: 110px;
+}
+.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.checked::before {
+  background-image: url(checked.jpg);
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 4px;
+  left: 110px;
+}
+
+ul li span {
+  position: absolute;
+  right: -120px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  color: #555;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background-color: #e6e3e3;
+}
