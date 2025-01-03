@@ -1,2 +1,2 @@
 # To-DoList
-create todo
+to-do app
